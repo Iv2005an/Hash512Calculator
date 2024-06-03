@@ -23,3 +23,5 @@ saltBytes.CopyTo(saltedStrBytes, strBytes.Length + constantSaltBytes.Length);
 Console.WriteLine("Постоянная соль: " + constantSalt);
 Console.WriteLine("Соль: " + salt);
 Console.WriteLine("Хеш пароля(SHA512): " + Convert.ToHexString(SHA512.HashData(saltedStrBytes)));
+
+Console.ReadLine();
